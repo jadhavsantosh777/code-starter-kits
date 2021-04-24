@@ -1,0 +1,12 @@
+E:\bowling-ball\BowlingBall\bin\Debug\BowlingBall.dll
+E:\bowling-ball\BowlingBall\bin\Debug\BowlingBall.pdb
+E:\bowling-ball\BowlingBall\obj\Debug\BowlingBall.csproj.CoreCompileInputs.cache
+E:\bowling-ball\BowlingBall\obj\Debug\BowlingBall.dll
+E:\bowling-ball\BowlingBall\obj\Debug\BowlingBall.pdb
+E:\bowling-ball\BowlingBall\obj\Debug\BowlingBall.csprojAssemblyReference.cache
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\bin\Debug\BowlingBall.dll
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\bin\Debug\BowlingBall.pdb
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\obj\Debug\BowlingBall.csprojAssemblyReference.cache
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\obj\Debug\BowlingBall.csproj.CoreCompileInputs.cache
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\obj\Debug\BowlingBall.dll
+E:\TAVISKA\trunk\bowling-ball\BowlingBall\obj\Debug\BowlingBall.pdb

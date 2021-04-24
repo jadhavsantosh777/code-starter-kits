@@ -1,22 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BowlingBall
+﻿namespace BowlingBall
 {
     public class Game
     {
+        private int currentFrame = 0;
+        private bool isFirstRoll = true;
+        private Scorer scorer = new Scorer();
+        public int Score
+        {
+            get
+            {
+                return GetScoreForFrame(currentFrame);
+            }
+        }
         public void Roll(int pins)
-        {
-            // Add your logic here. Add classes as needed.
+        {           
+            scorer.AddRoll(pins);
+            AdjustCurrentFrame(pins);
         }
-
-        public int GetScore()
+        private void AdjustCurrentFrame(int pins)
         {
-            // Returns the final score of the game.
-            return 0;
+            if (IsLastBallInFrame(pins))
+                AdvanceFrame();
+            else
+                isFirstRoll = false;
         }
-    }
+        private bool IsLastBallInFrame(int pins)
+        {
+            return IsStrike(pins) || (!isFirstRoll);
+        }
+        private bool IsStrike(int pins)
+        {
+            return (isFirstRoll && pins == 10);
+        }
+        private void AdvanceFrame()
+        {
+            currentFrame++;
+            if (currentFrame > 10)
+                currentFrame = 10;
+        }
+        public int GetScoreForFrame(int theFrame)
+        {
+            return scorer.GetScoreForFrame(theFrame);
+        }
+    }   
 }
